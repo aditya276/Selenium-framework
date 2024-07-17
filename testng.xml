@@ -5,22 +5,22 @@
 		<listener class-name="testComponent.Listeners"></listener>
 	</listeners>
 	
-<!--	<test name="test2" thread-count="5">
+	<test name="test2" thread-count="5">
 		<classes>
 			<class name="ssquareit.seleniumframework.E2ETest2" />
 		</classes>
-	</test>-->
+	</test>
 
-	<test thread-count="5" name="Test">
+	<!-- <test thread-count="5" name="Test">
 
 		<classes>
 			<class name="ssquareit.seleniumframework.VerifyInvalidLoginCred"></class>
-			<!-- <class name="testComponent.BaseTest"/>-->
+			 <class name="testComponent.BaseTest"/>
 
-			<!-- <class name="Infy.SeleniumFramework.E2ETest"/>-->
+			<class name="Infy.SeleniumFramework.E2ETest"/>
 		</classes>
 
-	</test> <!--
+	</test> 
 	Test -->
 	
 </suite> <!--

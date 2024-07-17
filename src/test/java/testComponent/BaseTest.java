@@ -9,7 +9,7 @@ import java.util.Properties;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,9 +27,9 @@ public class BaseTest {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
 				: prop.getProperty("browser");
 
-		if (browserName.equalsIgnoreCase("Chrome")) {
+		if (browserName.equalsIgnoreCase("Edge")) {
 
-			driver = new ChromeDriver();
+			driver = new EdgeDriver();
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 
 			driver = new FirefoxDriver();
